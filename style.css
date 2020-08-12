@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    display: inline-block;
+    margin-bottom: 55px;
+    position: relative;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}
+h1:hover::before{
+    width: 100%;
+    background-color: blue;
+}
+h1::after{
+    left: 0px;
+    bottom: -1px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+}
+
+h1:hover::after{
+    width: 100%;
+    background-color: red;
+}
